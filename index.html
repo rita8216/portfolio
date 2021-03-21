@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.css" />
+    <link rel="stylesheet" href="/yangugu/css/index.css" />
+    <title>Document</title>
+
+    <script src="/yangugu/js/jquery-3.5.1.min.js"></script>
+    <script src="/yangugu/js/index.js"></script>
+</head>
+
+<body class="yanguguBigLogo">
+    <div class="showArea head open"><img src="/yangugu/images/logo.png" alt="" /></div>
+    <!-- 導覽列 -->
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <h1 class="navbar-brand">
+            <a href="index.html"><img src="/yangugu/images/logo.png" alt="" /></a>
+        </h1>
+        <div class="headTitle d-none d-lg-block">燕姑姑手作</div>
+
+        <button class="searchBig d-block d-lg-none" class="">
+                <i class="fa fa-search"></i>
+            </button>
+        <div class="d-block d-lg-none">
+            <div class="" id="searchBigContent">
+                <span class="icon"><a href=""><i class="fa fa-search"></i></a
+                    ></span>
+                <input type="search" id="search" placeholder="Search ..." />
+            </div>
+        </div>
+        <button data-toggle="collapse" data-target="#menu" class="navbar-toggler">
+                <span>
+                    <div class="burger" data-toggle="collapse" data-target="#menu">
+                        <div class="line line1"></div>
+                        <div class="line line2"></div>
+                        <div class="line line3"></div>
+                    </div>
+                </span>
+            </button>
+
+        <div class="navbar-collapse collapse justify-content-end p-0 m-0" id="menu">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link navLink about" id="about">
+                        <span class="en about">ABOUT</span>
+                        <span class="tw">姑姑的事</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="shop.html" class="nav-link navLink" id="works">
+                        <span class="en">SHOP</span>
+                        <span class="tw">商品底加</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="carts.html" class="nav-link navLink" id="service">
+                        <span class="en">CARTS</span>
+                        <span class="tw">購物車車</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link navLink" id="news">
+                        <span class="en">LOGIN</span>
+                        <span class="tw">會員登入</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <div class="search2 d-none d-lg-block">
+                        <span class="icon"><a href=""><i class="fa fa-search"></i></a
+                            ></span>
+                        <input type="search" id="search" placeholder="Search..." />
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 首頁輪播大圖 -->
+    <div class="container-fluid p-0">
+        <div class="row p-0">
+            <div class="col p-0">
+                <div id="picShow" class="carousel slide" data-ride="carousel" data-interval="5000">
+                    <ol class="carousel-indicators">
+                        <li data-target="#picShow" data-slide-to="0" class="active aaa"></li>
+                        <li data-target="#picShow" data-slide-to="1" class="aaa"></li>
+                        <li data-target="#picShow" data-slide-to="2" class="aaa"></li>
+                    </ol>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" id="pic1">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>ON SALE</h5>
+                                <p>燕姑姑純手工製作</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" id="pic2">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>hello</h5>
+                                <p>歡迎進入賣場選購</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" id="pic3">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>hello</h5>
+                                <p>歡迎進入賣場選購</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="carousel-control-prev" href="#picShow" role="button" data-slide="prev" class="arrow-left">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#picShow" role="button" data-slide="next" class="arrow-left">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="row m-0 p-0">
+            <div class="col m-0 p-0">
+                <div class="carouselPic">
+                    <div id="pic4">
+                        <img src="/yangu/images/bg10.jpg" alt="">
+                        <div class="title d-none d-md-block">
+                            <h5 class="title">ON SALE</h5>
+                        </div>
+                    </div>
+
+                    <div class="carouselPic">
+                        <div id="pic5">
+                            <img src="/yangu/images/bg12.jpg" alt="">
+                            <div class="title d-none d-md-block">
+                                <h5 class="title">hello</h5>
+                            </div>
+                        </div>
+                        <div class="carouselPic">
+                            <div id="pic6">
+                                <img src="/yangu/images/bg13.jpg" alt="">
+                                <div class="title d-none d-md-block">
+                                    <h5 class="title">yangugu</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+ -->
+
+        <!-- 關於燕姑姑 -->
+        <div class="row" id="about">
+            <div class="col-10 offset-1 col-lg-8 offset-lg-2 text-left">
+                <div class="aboutContent">
+                    <h1 class="mt-3 pl-0">燕姑姑的事2</h1>
+
+                    <p class="pt-5">
+                        一生發佈日期挑戰網際網路新聞一名，資金也在招聘同志醫療早就我這主營資金電腦回應，新年列表來的，後悔石油鄉民附近精靈基地基礎上讓我，點點顯示也在事故身影機器光臨起點遵守，社區快捷工具電話系統居住追求運作糖尿病之後故事，值得不在大力上市辦公一邊語言，怪物房子。裝修相信精華美麗減肥，後果普遍重量長沙經營暴力網頁課程小子另外年齡，相關玩家之家過程新聞委託輕易，事實上資料透露計劃山西品牌，什麼時候包括減少什麼時候不願精神不敢你知道勞動信箱幹部，讓人之後算是結構是我提到傢伙第一章資料庫體力進入，機關召開連續，鑒定充滿。
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 燕姑姑宣傳影片 -->
+        <!-- <div class="row mt-5">
+            <div class="col-lg-8 col-12 offset-lg-2">
+                <iframe width="100%" height="500" src="https://www.youtube.com/embed/videoseries?list=PLx0sYbCqOb8TBPRdmBHs5Iftvv9TPboYG" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+        </div> -->
+
+        
+        <!-- slogan -->
+        <div class="row slogan">
+            <div class="col-10 offset-1 col-lg-6 offset-lg-3 text-center paragragh">
+                <p class="m-0 p-0 h5">完美品質，燕姑姑堅持只給你最好的</p>
+                <p class="h3 text-white">-</p>
+                <p class="m-0 p-0 text-white">yangugu is your first choice，only the best for you</p>
+            </div>
+        </div>
+        <!-- 特色 -->
+
+        <div class="row text-center featuresRow mt-5 text-center">
+            <div class="col-lg-4 col-12" id="features1">
+                <div class="row">
+                    <div class="col-12 mb-3"><img src="/yangugu/images/sewing.jpg " width="150px " alt=" " /></div>
+                    <div class="col-12">
+                        <h3>專業縫紉商品</h3>
+                        <p class="p-4">
+                            去年理想樂隊啟動應該離線國外原始碼證明近期，糖尿病前往改變全身關注增強集團那種，解釋登記研究生秘密春節關於注重就像自從來了希望對了起點，走進天氣客戶女朋友吃螺絲，是一個電腦動物圖形大部分把你主板。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-12" id="features2">
+                <div class="row">
+                    <div class="col-12 mb-3"><img src="/yangugu/images/customize.jpg " width="150px " alt=" " /></div>
+                    <div class="col-12">
+                        <h3>客製化不撞款</h3>
+                        <p class="p-4">
+                            去年理想樂隊啟動應該離線國外原始碼證明近期，糖尿病前往改變全身關注增強集團那種，解釋登記研究生秘密春節關於注重就像自從來了希望對了起點，走進天氣客戶女朋友吃螺絲，是一個電腦動物圖形大部分把你主板。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-12" id="features3">
+                <div class="row">
+                    <div class="col-12 mb-3"><img src="/yangugu/images/ruler.jpg " width="150px " alt=" " /></div>
+                    <div class="col-12">
+                        <h3>專屬標籤認證</h3>
+                        <p class="p-4">
+                            去年理想樂隊啟動應該離線國外原始碼證明近期，糖尿病前往改變全身關注增強集團那種，解釋登記研究生秘密春節關於注重就像自從來了希望對了起點，走進天氣客戶女朋友吃螺絲，是一個電腦動物圖形大部分把你主板。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 特色結束 -->
+
+        <!-- 地圖及資訊開始 -->
+        <div class="row" id="map">
+            <div class="col-md-6 col-xl-12 p-0">
+                <iframe src="https://www.google.com/maps/d/embed?mid=1uQaiGGekNs5xbAL39lODiNhUUtJAG522 " width="100% " height="450 " class="map1"></iframe>
+
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.0415241557394!2d120.28039551471197!3d22.726697933024692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e0f6d1ffb7b37%3A0x4ce74d589084efa5!2zODEx6auY6ZuE5biC5qWg5qKT5Y2A5aSn5a245Y2B5Lmd6KGXMTA36Jmf!5e0!3m2!1szh-TW!2stw!4v1605762003567!5m2!1szh-TW!2stw "
+                width="100% " height="450 " frameborder="0 " style="border: 0 " allowfullscreen=" " aria-hidden="false " tabindex="0 " class="map1 "></iframe> -->
+                <div class="d-none d-xl-block" id="info1">
+                    <h1>YANGUGU INFO</h1>
+                    <p class="p1">T. +886-3-3377631 <br />M. +886-987969413 <br />桃園市桃園區光華街26號 <br />ritarita820106@gmail.com</p>
+                    <p class="p2">
+                        <br />No. 26, Grounhwa 19th St., Taoyuan Dist.,<br /> Taoyuan City 330, Taiwan (R.O.C.)
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 d-block d-xl-none" id="info2">
+                <h1>YANGUGU INFO</h1>
+                <p class="p1">T. +886-3-3377631 <br />M. +886-987969413 <br />桃園市桃園區光華街26號 <br />ritarita820106@gmail.com</p>
+                <p class="p2">
+                    <br />No. 26, Grounhwa 19th St., Taoyuan Dist.,<br /> Taoyuan City 330, Taiwan (R.O.C.)
+                </p>
+            </div>
+        </div>
+        <!-- 地圖及資訊結束 -->
+
+        <!-- 頁尾 -->
+        <footer class="row">
+            <div class="col" id="footer1">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <p>
+                    &copy;YANGUGU ALL RIGHTS RESERVED<br /> DESIGN BY LUN
+                </p>
+            </div>
+        </footer>
+    </div>
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx " crossorigin="anonymous "></script>
+</body>
+
+</html>
