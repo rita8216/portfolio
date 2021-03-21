@@ -1,0 +1,56 @@
+body {
+    background-color: #000;
+}
+
+.loginForm h5 {
+    color: #fff;
+    font-size: 1.2em;
+    letter-spacing: 0.2em;
+    background-color: rgba(53, 53, 53, 0.5);
+    border: 1px solid #fff;
+    height: 80px;
+    line-height: 80px;
+    margin-top: 80px;
+}
+
+.formContent {
+    border: none;
+    border-bottom: 1px solid #fff;
+    height: 80px;
+    width: 100%;
+    color: #fff;
+    display: inline-block;
+}
+
+.formContent:focus {
+    outline: none;
+}
+
+#sub {
+    width: 100px;
+    height: 50px;
+    letter-spacing: 0.1rem;
+    border: 1px solid #fff;
+    color: #fff;
+    background-image: url('/yangugu/images/black.jpg');
+    transition: all 0.3s;
+    /* border-radius: 30px; */
+}
+
+#sub:hover {
+    background-position: 0px -52px;
+    color: #000;
+}
+
+.rememberme,
+.forget {
+    color: #fff;
+}
+
+.loginForm a {
+    text-decoration: none;
+}
+
+.loginForm a:hover {
+    color: rgb(103, 103, 103);
+}

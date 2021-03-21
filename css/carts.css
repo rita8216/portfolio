@@ -1,0 +1,182 @@
+body {
+    letter-spacing: 0.1rem;
+    box-sizing: border-box;
+}
+
+.container {
+    margin-top: 150px;
+    /* width: 90%; */
+}
+
+#cartTopPic {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+}
+
+
+/* 按鈕 */
+
+#addCart {
+    width: 170px;
+    height: 40px;
+    letter-spacing: 0.1rem;
+    border: 1px solid rgb(0, 0, 0);
+    color: #fff;
+    background-image: url('/yangugu/images/black.jpg');
+    transition: all 0.3s;
+}
+
+#addCart:hover {
+    background-position: 0px -52px;
+    color: #000;
+}
+
+
+/* 商品資訊  */
+
+.productDetails {
+    border-bottom: 1px solid #000;
+    padding: 10px;
+    margin: 10px 10px 10px 1px;
+}
+
+.productDetails div {
+    border-left: 5px solid #000;
+}
+
+.select-style {
+    padding: 0;
+    margin-bottom: -10px;
+    border: 1px solid #ccc;
+    width: 110px;
+    border-radius: 1px;
+    overflow: hidden;
+    background-color: #fff;
+    background: #fff url('http://www.scottgood.com/jsg/blog.nsf/images/arrowdown.gif') no-repeat 90% 50%;
+}
+
+.select-style select {
+    padding: 5px 8px;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    background-image: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.select-style select:focus {
+    outline: none;
+}
+
+.qty {
+    width: 50px;
+    height: 27px;
+    border: 1px solid #000;
+    text-align: center;
+    float: left;
+}
+
+.btn-minus {
+    width: 30px;
+    border: 1px solid #000000;
+    float: left;
+    text-align: center;
+    background-color: rgb(227, 227, 227);
+    cursor: pointer;
+}
+
+.btn-plus {
+    width: 30px;
+    border: 1px solid #000000;
+    float: left;
+    text-align: center;
+    background-color: rgb(227, 227, 227);
+    cursor: pointer;
+}
+
+.clear {
+    clear: both;
+}
+
+.buyTitle {
+    float: left;
+}
+
+.buyQty {
+    margin-top: -10px;
+}
+
+
+/* 新增 */
+
+.thead {
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+}
+
+.productImg {
+    width: 150px;
+    /* height: 200px; */
+    box-shadow: 0px 3px 3px 0px #8f8f8f;
+    border-radius: 5px;
+}
+
+.productDesc::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.productDesc .content {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.totalPrice {
+    float: right;
+}
+
+.productList {
+    border-bottom: 1px solid #000;
+    /* padding: 10px 0px 10px 0px; */
+    margin: 10px 0px 10px 0px;
+}
+
+.productPrice {
+    width: 110px;
+}
+
+.productQty {
+    width: 100px;
+}
+
+.productQty a {
+    text-decoration: none;
+    color: #000;
+}
+
+.productQty .btn-minus {
+    float: left;
+}
+
+.productQty .btn-plus {
+    float: right;
+}
+
+.deleteIcon {
+    border: 1px solid #000;
+    text-align: center;
+    padding: 2px 3px 2px 5px;
+    border-radius: 2px;
+    color: #000;
+}
+
+.checkOut {
+    float: right;
+}
