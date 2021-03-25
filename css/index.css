@@ -10,7 +10,8 @@
     background-color: rgba(255, 255, 255, 1);
 }
 
-.showArea img {
+
+/* .showArea img {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -18,6 +19,37 @@
     margin-top: -300px;
     animation: showPic 5s;
     text-align: center;
+} */
+
+.showArea .hand {
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    margin-left: -200px;
+    margin-top: -200px;
+    animation: showPic 8s;
+    height: 400px;
+}
+
+.showArea .mouse {
+    position: absolute;
+    top: 20%;
+    left: 80%;
+    margin-left: -200px;
+    margin-top: -200px;
+    animation: showPic 8s;
+    height: 400px;
+}
+
+.showArea .name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -200px;
+    animation: showPic 8s;
+    height: 400px;
+    /* text-align: center; */
 }
 
 @keyframes showPic {
