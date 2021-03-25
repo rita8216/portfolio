@@ -48,7 +48,7 @@ $(function() {
                 1000
             );
         }
-        if (wh >= 950) {
+        if (wh >= 700) {
             $('#features1').animate({
                     opacity: '1',
                     'margin-top': '0px',
@@ -65,7 +65,7 @@ $(function() {
                     opacity: '1',
                     'margin-top': '0px',
                 },
-                1600
+                2000
             );
         }
     });
