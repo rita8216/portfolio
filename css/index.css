@@ -41,10 +41,10 @@ body {
 }
 
 .yanguguBigLogo {
-    background-image: url(/yangugu/images/logo_light2.png);
+    /* background-image: url(/yangugu/images/logo_light2.png);
     background-position-y: 300px;
     background-position-x: -150px;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 }
 
 
@@ -367,7 +367,7 @@ nav img {
 
 .slogan {
     background-image: url('/yangugu/images/bg1.jpg');
-    margin: 100px 0 100px 0;
+    margin: 150px 0 100px 0;
     padding: 100px 0 100px 0;
 }
 

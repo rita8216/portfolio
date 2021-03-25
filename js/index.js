@@ -10,14 +10,14 @@ $(function() {
         );
     }
 
-    $('#searchBigContent').hide();
-    $('.searchBig').click(function() {
-        $('#searchBigContent').slideToggle(500);
-    });
+    // $('#searchBigContent').hide();
+    // $('.searchBig').click(function() {
+    //     $('#searchBigContent').slideToggle(500);
+    // });
 
     $(window).scroll(function() {
         var wh = $(this).scrollTop();
-        if (wh >= 300) {
+        if (wh >= 250) {
             // alert('hello');
             $('.aboutContent h1').animate({
                     opacity: '1',
@@ -32,7 +32,7 @@ $(function() {
                 1500
             );
         }
-        if (wh >= 600) {
+        if (wh >= 150) {
             // alert('hello');
             $('.slogan .paragragh').animate({
                     opacity: '1',
