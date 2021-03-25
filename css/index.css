@@ -1,0 +1,495 @@
+/* 開頭動畫 */
+
+.showArea {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.showArea img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -300px;
+    margin-top: -300px;
+    animation: showPic 5s;
+    text-align: center;
+}
+
+@keyframes showPic {
+    0% {
+        opacity: 0;
+        transform: scale(0.1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+}
+
+body {
+    font-family: 'Poppins', 'Microsoft JhengHei', Helvetica, Arial, sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.yanguguBigLogo {
+    background-image: url(/yangugu/images/logo_light2.png);
+    background-position-y: 300px;
+    background-position-x: -150px;
+    background-repeat: no-repeat;
+}
+
+
+/* 導覽列 */
+
+nav {
+    background-color: #fff;
+    height: auto;
+    opacity: 0.8;
+    transition: all 0.5s;
+}
+
+nav:hover {
+    background-color: #fff;
+    opacity: 1;
+    cursor: pointer;
+}
+
+#menu a {
+    color: #000;
+    margin: 0 20px 0 20px;
+    font-size: 0.85em;
+    letter-spacing: 0.2em;
+}
+
+nav img {
+    width: 40px;
+    margin: 5px 0 0 10px;
+}
+
+.navLink:hover .tw {
+    opacity: 1;
+}
+
+.navLink:hover .en {
+    opacity: 0;
+}
+
+.en {
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+.tw {
+    margin-left: -65px;
+    position: relative;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+@media screen and (max-width: 990px) {
+    .tw {
+        opacity: 0 !important;
+    }
+    .tw:hover {
+        opacity: 0 !important;
+    }
+    .en {
+        opacity: 1 !important;
+    }
+    .en:hover {
+        opacity: 1 !important;
+    }
+}
+
+.tw::after {
+    content: '';
+    bottom: 0px;
+    position: absolute;
+    display: inline-block;
+    border-bottom: 1px solid rgb(75, 75, 75);
+    margin-left: -70px;
+    width: 70px;
+}
+
+.headTitle {
+    letter-spacing: 0.2em;
+    font-size: 1rem;
+    /* margin-left: 50px; */
+}
+
+
+/* 搜尋 */
+
+.search2 {
+    width: 150px;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+    top: 5px;
+    float: right;
+    padding-left: 10px;
+    margin-right: 50px;
+}
+
+.search2 input#search {
+    width: 150px;
+    height: 30px;
+    background: #e9e9e9;
+    border: none;
+    font-size: 9pt;
+    float: left;
+    color: #63717f;
+    padding-left: 20px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+.search2 .icon {
+    position: absolute;
+    right: -10px;
+    top: 2px;
+    float: right;
+    z-index: 1;
+    color: #000000;
+}
+
+.search2 input#search:hover,
+.search2 input#search:focus,
+.search2 input#search:active {
+    outline: none;
+}
+
+
+/* 搜尋下拉 */
+
+.searchBig {
+    position: absolute;
+    right: 90px;
+    top: 25px;
+    float: right;
+    z-index: 1;
+    color: #040404;
+    border: none;
+    background-color: rgb(255, 255, 255);
+}
+
+#searchBigContent {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 80px;
+    top: 77px;
+    left: 0px;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+#searchBigContent i {
+    position: relative;
+    right: 80px;
+    top: 20px;
+    /* float: right; */
+    /* z-index: 1; */
+    color: #4d4d4d;
+}
+
+
+/* #searchBigContent {
+    width: 150px;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+    top: 5px;
+    float: right;
+    padding-left: 10px;
+    margin-right: 50px;
+} */
+
+#searchBigContent input#search {
+    width: 94%;
+    height: 70px;
+    background: #f2f2f2;
+    border: none;
+    font-size: 11pt;
+    color: #000000;
+    padding-left: 40px;
+    margin: 0 60px 20px 20px;
+    border-radius: 10px;
+}
+
+#searchBigContent .icon {
+    position: absolute;
+    right: -10px;
+    top: 2px;
+    float: right;
+    z-index: 1;
+    color: #000000;
+}
+
+#searchBigContent input#search:hover,
+#searchBigContent input#search:focus,
+#searchBigContent input#search:active {
+    outline: none;
+}
+
+
+/* 漢堡選單 */
+
+.line {
+    width: 30px;
+    height: 1px;
+    background-color: rgb(16, 16, 16);
+    margin: 7px;
+    transition: all 0.5s;
+}
+
+.burger:hover .line1 {
+    transform: rotate(45deg) translate(5px, 7px);
+}
+
+.burger:hover .line2 {
+    transform: translate(-15px, 0px);
+    opacity: 0;
+}
+
+.burger:hover .line3 {
+    transform: rotate(-45deg) translate(5px, -8px);
+}
+
+
+/* 大圖輪播 */
+
+.carousel-indicators .aaa {
+    width: 8px;
+    height: 8px;
+    border-radius: 10px;
+}
+
+#pic1,
+#pic2,
+#pic3 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+#pic1 {
+    background-image: url('/yangugu/images/bg10.jpg');
+}
+
+#pic2 {
+    background-image: url('/yangugu/images/bg12.jpg');
+}
+
+#pic3 {
+    background-image: url('/yangugu/images/bg13.jpg');
+}
+
+#pic4,
+#pic5,
+#pic6 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    position: absolute;
+    top: 0px;
+}
+
+#pic4 {
+    background-image: url('/yangugu/images/bg10.jpg');
+}
+
+#pic5 {
+    background-image: url('/yangugu/images/bg12.jpg');
+}
+
+#pic6 {
+    background-image: url('/yangugu/images/bg13.jpg');
+}
+
+.carouselPic {
+    height: 600px;
+    /* overflow: hidden; */
+    width: 100%;
+    position: absolute;
+    /* margin-top: 0px; */
+    /* margin-bottom: 600px; */
+    top: 0px;
+}
+
+
+/* .carouselPic img {
+    position: absolute;
+    top: 0px;
+} */
+
+.carouselPic .title {
+    position: absolute;
+    top: 300px;
+    left: 45%;
+    font-size: 4rem;
+}
+
+
+/* 關於 */
+
+
+/* #about::before {
+    content: '';
+    border-bottom: 5px solid #000;
+    width: 200px;
+    padding: 0px;
+    margin-top: 100px;
+} */
+
+#about {
+    /* margin-top: 180px; */
+    /* margin-top: 780px; */
+}
+
+.aboutContent h1,
+.aboutContent p {
+    margin-left: 200px;
+    opacity: 0;
+}
+
+.slogan {
+    background-image: url('/yangugu/images/bg1.jpg');
+    margin: 100px 0 100px 0;
+    padding: 100px 0 100px 0;
+}
+
+.slogan .paragragh {
+    opacity: 0;
+    letter-spacing: 0.2rem;
+    margin-top: 100px;
+}
+
+
+/* 特色 */
+
+.featuresRow {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 150px;
+}
+
+#features1,
+#features2,
+#features3 {
+    opacity: 0;
+    margin-top: 150px;
+}
+
+#features1 img,
+#features2 img,
+#features3 img {
+    transition: all 0.5s;
+}
+
+#features1 img:hover,
+#features2 img:hover,
+#features3 img:hover {
+    transform: scale(1.2);
+    margin-top: -8px;
+}
+
+
+/* 聯絡資訊 */
+
+#info2 {
+    padding: 60px 0 60px 60px;
+    background-color: rgb(190, 190, 190);
+    margin: 0;
+}
+
+#info2 h1 {
+    padding: 0 0 20px 20px;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+}
+
+#info2 .p1 {
+    padding: 0 0 0px 20px;
+    margin: 0;
+    letter-spacing: 0.1rem;
+    color: #000;
+    font-size: 0.8rem;
+    line-height: 2rem;
+}
+
+#info2 .p2 {
+    padding: 0 0 0px 20px;
+    letter-spacing: 0.1rem;
+    color: rgb(133, 133, 133);
+    font-size: 0.8rem;
+}
+
+
+/* #info1 {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 370px;
+    width: 500px;
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    z-index: 1;
+}
+
+#info1 h1 {
+    padding: 60px 0 30px 60px;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+}
+
+#info1 .p1 {
+    padding: 0 0 0px 60px;
+    margin: 0;
+    letter-spacing: 0.1rem;
+    color: rgb(255, 255, 255);
+    font-size: 0.8rem;
+    line-height: 2rem;
+}
+
+#info1 .p2 {
+    padding: 0 0 0px 60px;
+    letter-spacing: 0.1rem;
+    color: rgb(179, 179, 179);
+    font-size: 0.8rem;
+} */
+
+
+/* 頁尾 */
+
+footer {
+    background-color: black;
+    padding: 20px;
+    height: 350px;
+    color: white;
+    font-size: 0.85em;
+    letter-spacing: 0.2em;
+    /* line-height: 2rem; */
+}
+
+#footer1 {
+    margin: 60px 0 0 30px;
+    line-height: 2rem;
+}
+
+#footer1 i {
+    margin: 3px 3px 15px 3px;
+}
