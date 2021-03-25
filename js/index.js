@@ -4,10 +4,17 @@ $(function() {
 
     function hidePic() {
         $('.showArea').animate({
-                'margin-top': '-200%',
+                // 'margin-top': '-200%',
+                'opacity': '0'
             },
-            2000
+            1000
         );
+        $('.showArea').animate({
+             'margin-top': '-200%'
+
+        },
+        1300
+    );
     }
 
     // $('#searchBigContent').hide();
