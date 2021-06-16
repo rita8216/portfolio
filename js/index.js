@@ -1,4 +1,12 @@
+$(window).scroll(function(){
+    if($(window).scrollTop()<=0){
 
+    $(".explore").addClass("at_top")
+
+    }else{ $(".explore").removeClass("at_top")
+
+    }
+  });
 $(function() {
     setTimeout(hidePic, 4000);
 
