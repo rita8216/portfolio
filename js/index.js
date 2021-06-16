@@ -1,12 +1,6 @@
-$(window).scroll(function(){
-    if($(window).scrollTop()<=0){
 
-    $(".explore").addClass("at_top")
 
-    }else{ $(".explore").removeClass("at_top")
 
-    }
-  });
 $(function() {
     setTimeout(hidePic, 4000);
 
@@ -47,7 +41,7 @@ $(function() {
                 1500
             );
         }
-        if (wh >= 150) {
+        if (wh >= 50) {
             // alert('hello');
             $('.slogan .paragragh').animate({
                     opacity: '1',
@@ -76,6 +70,13 @@ $(function() {
                 2000
             );
         }
+        if($(window).scrollTop()<=0){
+
+            $(".explore").addClass("at_top")
+
+            }else{ $(".explore").removeClass("at_top")
+
+            }
     });
 
     // $(window).scroll(function() {

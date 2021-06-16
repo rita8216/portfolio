@@ -530,14 +530,34 @@ footer {
 
 .explore {
     width: 50px;
-    height: 50px;
-    /* opacity: 0; */
-    border-radius: 50%;
+    height: 100px;
+    opacity: 0;
+    border-radius: 25px;
     background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
 }
 
 i {
-    color: #000;
+    color: #555;
+    font-size: 30px;
+}
+
+i.mouse {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+}
+
+i.arrow {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translateX(-50%);
 }
 
 .at_top {
