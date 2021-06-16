@@ -542,8 +542,9 @@ footer {
 }
 
 i {
-    color: #555;
+    /* color: #555; */
     font-size: 30px;
+    animation: shine 3s linear;
 }
 
 i.mouse {
@@ -551,12 +552,24 @@ i.mouse {
     left: 50%;
     top: 20%;
     transform: translateX(-50%);
+    animation: Shine 3s linear;
+}
+
+@keyframes Shine {
+    0% {
+        left: 50%;
+        color: #fff;
+    }
+    100% {
+        left: 70%;
+        color: #000;
+    }
 }
 
 i.arrow {
     position: absolute;
     left: 50%;
-    top: 60%;
+    top: 55%;
     transform: translateX(-50%);
 }
 
