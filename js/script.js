@@ -12,34 +12,34 @@ $(window).scroll(function(){
   // $(".en").removeClass("topcolor");
   $(".explore").removeClass("top");
   }
-  
+
 });
 
 // 滑鼠移動效果----------------------
 $(window).mousemove(function(evt){
-  
+
   var pagex = evt.pageX;
   var pagey = evt.pageY;
-  
+
   //1.三角形移動
   $(".tri").css("transform","translateX("+pagex/20+"px) translateY(-98%)");
-  
-  
+
+
   var y= pagey-$("#first").offset().top;
   var x= pagex-$("#first").offset().left;
  //x,y純計算＃section_about距離左邊以及上面的距離
-  
+
    //2.滑鼠移動
   $("#cross").css("left",x+"px");
   $("#cross").css("top",y+"px");
-  
+
   //限定滑鼠只在#first出現
   if(y<70||y>$("#first").outerHeight()){
     $("#cross").hide();
   }else{
      $("#cross").show();
   }
-  
+
   //3.線的移動
  $(".curveline1").css("transform","translateX("+y/-20+"px)"); $(".curveline2").css("transform","translateX("+y/-25+"px)"); $(".curveline3").css("transform","translateX("+y/-25+"px)");
 // $(".namelogo").css("transform","translateX("+y/-25 - 100+"px)translateY("+x/-25+"px)");
@@ -88,13 +88,13 @@ $("#menubtn").click(function() {
   $("#bigmenu").fadeToggle(800);
     click+=1;
       menuToggle();
-});   
+});
 
 $('.b1,.b2,.b3').click(function() {
   $('#bigmenu').fadeOut(800);
     click+=1;
       menuToggle();
-});   
+});
 
 //設定點擊menu的滑動效果
 
@@ -106,4 +106,4 @@ $('#b1,#b2,#b3').click(function() {
        },800);
  });
 
-var s = skrollr.init();
+// var s = skrollr.init();
