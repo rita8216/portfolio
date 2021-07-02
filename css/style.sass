@@ -6,10 +6,10 @@
 html,body
   padding: 0px
   margin: 0px
-  
+
 //  開頭動畫----------------------
 
-.showArea 
+.showArea
   width: 100%
   height: 100%
   position: absolute
@@ -25,7 +25,7 @@ html,body
     margin-top: -200px
     animation: showPic 8s
     height: 400px
-  .mouse 
+  .mouse
     position: absolute
     top: 20%
     left: 80%
@@ -33,7 +33,7 @@ html,body
     margin-top: -200px
     animation: showPic 8s
     height: 400px
-  .name 
+  .name
     position: absolute
     top: 50%
     left: 50%
@@ -43,17 +43,17 @@ html,body
     height: 400px
 
 
-@keyframes showPic 
+@keyframes showPic
     0%
       opacity: 0
       transform: scale(0.1)
-    50% 
+    50%
         opacity: 1
         transform: scale(0.5)
-    100% 
+    100%
         opacity: 0
         transform: scale(0.5)
-    
+
 
 // 滑鼠移動-------------------------
 #cross
@@ -64,7 +64,7 @@ html,body
   background-size: cover
   transform: translate(-60%,-60%)
   z-index: 10
-  
+
 // nav導覽列----------------------
 
 .nav.top
@@ -72,7 +72,7 @@ html,body
   color: black
   border-bottom: solid 1px #444
 
-.nav 
+.nav
   background-color: rgba(255,255,255,0.8)
   width: 100%
   position: fixed
@@ -90,16 +90,16 @@ html,body
     display: flex
     align-items: center
     font-weight: 300
-    
+
   .list
     // float: right
     margin-right: 20px
     height: 40px
     margin-top: 15px
-    margin-bottom: 15px  
+    margin-bottom: 15px
     position: absolute
     right: 20px
-    
+
     li
       float: left
       width: 120px
@@ -107,8 +107,8 @@ html,body
       list-style: none
       cursor: pointer
       position: relative
-      
-      &:hover 
+
+      &:hover
         .en
           opacity: 0
         .ch
@@ -120,13 +120,13 @@ html,body
         left: 50%
         transform: translate(-50%,-50%)
         transition: 0.5s
-        
-        
+
+
       .en
         opacity: 1
-        color: black 
+        color: black
         &.topcolor
-          color: white 
+          color: white
       .ch
         opacity: 0
         border-bottom: 1px solid black
@@ -134,8 +134,8 @@ html,body
         color: black
         &.topcolor
           border-bottom: 1px solid white
-          color: white 
-               
+          color: white
+
   .btn
     position: absolute
     top: 0
@@ -146,7 +146,7 @@ html,body
     cursor: pointer
     display: none
     transition: 1s
-    
+
     .line
       width: 25px
       height: 3px
@@ -160,7 +160,7 @@ html,body
         top: 11px
         background-color: #111
         &.lineclick
-          transform: translate(-2px,7px)rotate(45deg) 
+          transform: translate(-2px,7px)rotate(45deg)
       &.line2
         top: 18px
         background-color: #333
@@ -172,10 +172,10 @@ html,body
         top: 25px
         background-color: #666
         &.lineclick
-          transform: translate(-2px,-7px)rotate(-45deg) 
-    
+          transform: translate(-2px,-7px)rotate(-45deg)
+
 // ----------------------
-section#bigmenu      
+section#bigmenu
   width: 100%
   height: 600px
   background-color: rgb(255, 255, 255)
@@ -187,7 +187,7 @@ section#bigmenu
     li
       list-style: none
       margin: 30px
-      font-size: 18px
+      font-size: 14px
       opacity:0
       a
         text-decoration: none
@@ -195,8 +195,8 @@ section#bigmenu
         transition: color .5s
         &:hover
           color: #555
-      
-  
+
+
 // #first----------------------
 
 section#first
@@ -218,7 +218,7 @@ section#first
     h2
       font-family: 'Staatliches', cursive
       font-size: 50px
-      
+
   @keyframes logonameShow
     0%
       opacity: 0
@@ -226,7 +226,7 @@ section#first
     100%
       opacity: 1
       margin-top: 0px
-      
+
   .explore
     position: absolute
     background-color: transparent
@@ -296,13 +296,13 @@ section#first
     left: 45%
     width: 50px
     transition: 0.3s
-  
+
 @media screen and (max-width: 800px)
   .nav .btn
     display: flex
   .nav .list
     display: none
-// #resume----------------------    
+// #resume----------------------
 section#resume
   position: relative
   height: 500px
@@ -311,7 +311,7 @@ section#resume
   background-size: cover
   background-attachment: fixed
   // background-color: #ffbb33
-      
+
   .autobiography
     top: 0px
     background-color: #fff
@@ -325,7 +325,7 @@ section#resume
     padding: 20px
     border-radius: 5px
     box-shadow: 0px 0px 5px
-    animation: resumemove 2.4s 
+    animation: resumemove 2.4s
     position: relative
     h1
       position: absolute
@@ -338,7 +338,7 @@ section#resume
       top: 0
       width: 250px
       transform: translateY(-105%)
-   
+
   @keyframes resumemove
     0%
       top: 50px
@@ -349,7 +349,7 @@ section#resume
     height: 700px
 // ----------------------
 section#resume2
-  padding: 100px 0 0 0 
+  padding: 100px 0 0 0
   h1
     font-family: 'Staatliches', cursive
     text-align: center
@@ -405,7 +405,7 @@ section#resume2
       padding-left: 40px
     .container
       width: 80%
-      
+
       ul
         // width: 58%
         display: inline-block
@@ -414,8 +414,8 @@ section#resume2
           line-height:20px
       .skillbar
         // width: 40%
-        
-          
+
+
 // ----------------------
 section#resume3
   padding: 100px 0px
@@ -429,7 +429,7 @@ section#resume3
     .resumepic
       height: 600px
       width: 600px
-      
+
       svg.text
         text
         writing-mode: vertical-rl
@@ -460,7 +460,7 @@ section#resume3
     display: none
 // ----------------------
 
-  
+
 section#resume4
   padding: 100px 0px
   // display: none
@@ -475,7 +475,7 @@ section#resume4
     text-align: center
     .resumevertical
       height: 600px
-      width: 400px 
+      width: 400px
       text
         font-size: 12px
       .company
@@ -494,13 +494,13 @@ section#resume4
 @media screen and (min-width: 800px)
   #resume4
     display: none
-         
-        
-        
-      
+
+
+
+
 
 // ----------------------
-    
+
 section#works
   background-color:  #155151
   padding: 100px 0px
@@ -510,7 +510,7 @@ section#works
     max-width: 800px
     // margin-left: auto
     // margin-right: auto
-  h1 
+  h1
     color: white
     margin-bottom: 30px
     font-family: 'Staatliches', cursive
@@ -524,8 +524,8 @@ section#works
     margin-top: 10px
     // margin-left: 10px
     overflow: hidden
-    
-    
+
+
     &:hover
       &:before,.text,.link
         opacity:1
@@ -550,16 +550,16 @@ section#works
       left: 0
       top: 0
       background-position: center center
-   
+
     .text
       position: absolute
       left: 20px
-      bottom: 10px  
+      bottom: 10px
       color: white
       transition: 0.5s
       z-index: 1
       opacity: 0
-      h4 
+      h4
         font-size: 15px
     .link
       position: absolute
@@ -584,7 +584,7 @@ section#works
         left: 50%
         transform: translate(-50%,-50%)
         color: white
-        
+
   @media screen and (min-width: 800px)
   .work
     img
@@ -604,15 +604,14 @@ footer#footer
   padding: 50px
   font-size: 12px
   margin: 0
-  
+
   i
     color: white
     font-size: 20px
-  
-    
-    
-      
-      
-      
-    
-  
+
+
+
+
+
+
+
