@@ -106,4 +106,4 @@ $('#b1,#b2,#b3').click(function() {
        },800);
  });
 
-var s = skrollr.init();
+// var s = skrollr.init();
